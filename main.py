@@ -204,7 +204,7 @@ def MDP_Calculator(conditions):
 
 
 def ReportGen(IPnMAC, C1, C2, C3, C4, C5, C6, C7, C8):
-    with open("outputReport.csv",'w+') as file:
+    with open("Report.csv",'w+') as file:
         file.writelines("IP_Address\tMAC_Address\tNon-Std_Ports\tPotential_DDoS\tL_Pkt_Size\tUnsolicitated_ARP_Replies\tUnusually_L_DNS\tExcessive_ICMP_Echo_Req\tExcessive_TCP_SYN\tExcessive_Port_Scanning\tMDP(%)\n")
         for ip,mac in IPnMAC.items():
             columns=[]
