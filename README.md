@@ -1,7 +1,3 @@
-Certainly! Below is the `README.md` file tailored to the provided Python script. It includes an overview, features, usage instructions, and other relevant sections.
-
----
-
 # Network Traffic Analysis Tool
 
 ## Overview
@@ -73,57 +69,6 @@ The tool leverages the `scapy` library for packet parsing and analysis.
 
 ---
 
-## Code Details
-
-### Functions
-
-#### 1. `IP_to_MAC_mapping(packets)`
-- Maps IP addresses to their corresponding MAC addresses using the `Ether` layer.
-- Returns a dictionary of IP-to-MAC mappings.
-
-#### 2. `Non_Std_ports(packets)`
-- Detects traffic on non-standard ports (other than 80, 443, and 22).
-- Returns a set of IPs using non-standard ports.
-
-#### 3. `Potential_DDoS_IPs(packets)`
-- Identifies IPs with high traffic volume exceeding a threshold (default: 100 packets).
-- Returns a list of potential DDoS candidate IPs.
-
-#### 4. `Large_pktSize_IPs(packets)`
-- Flags IPs sending packets larger than the standard MTU (1500 bytes).
-- Returns a set of IPs with large packet sizes.
-
-#### 5. `ARPreply_unsolicitated(packets)`
-- Detects unsolicited ARP replies (ARP replies without prior ARP requests).
-- Returns a set of IPs sending unsolicited ARP replies.
-
-#### 6. `Unusual_LargeDNS(packets)`
-- Identifies unusually large DNS responses exceeding a size threshold (512 bytes).
-- Returns a list of packets with large DNS responses.
-
-#### 7. `ExcessICMP(packets)`
-- Detects excessive ICMP Echo Requests within a time window (default: 60 seconds, threshold: 10 requests).
-- Returns a list of IPs with excessive ICMP activity.
-
-#### 8. `TCP_SYN_Flood(packets)`
-- Detects TCP SYN floods by counting SYN packets exceeding a threshold (default: 100 SYN packets).
-- Returns a set of IPs involved in SYN flood attacks.
-
-#### 9. `IPs_scanning_excess_ports(packets)`
-- Detects port scanning attempts by identifying IPs connecting to multiple ports (threshold: 5 ports).
-- Returns a set of IPs involved in port scanning.
-
-#### 10. `MDP_Calculator(conditions)`
-- Calculates the Malicious Detection Percentage (MDP) based on the number of triggered rules.
-- Formula: `(satisfied_rules * 100) / 8`.
-
-#### 11. `ReportGen(IPnMAC, C1, C2, C3, C4, C5, C6, C7, C8)`
-- Generates a CSV report (`outputReport.csv`) with the following columns:
-  - IP Address
-  - MAC Address
-  - Flags for each detection rule
-  - MDP score
-
 ---
 
 ## Example Output
@@ -137,23 +82,7 @@ The generated `outputReport.csv` will look like this:
 
 ---
 
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
 ## Acknowledgments
 
 - Built using the [Scapy](https://scapy.net/) library for packet manipulation and analysis.
 - Inspired by network security best practices and common threat detection techniques.
-
----
-
-Feel free to customize this `README.md` further to suit your specific needs or add additional sections such as "Known Issues" or "Future Work." Let me know if you need any further assistance!
