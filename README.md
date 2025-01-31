@@ -21,7 +21,7 @@ The tool leverages the `scapy` library for packet parsing and analysis.
 8. **Port Scanning**: Detects IPs attempting connections to multiple ports.
 
 ### Output
-- A CSV file (`outputReport.csv`) is generated with the following columns:
+- A CSV file (`Report.csv`) is generated with the following columns:
   - IP Address
   - MAC Address
   - Flags for each detection rule (1 = triggered, 0 = not triggered)
@@ -46,8 +46,8 @@ The tool leverages the `scapy` library for packet parsing and analysis.
 
 2. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/network-traffic-analysis.git
-   cd network-traffic-analysis
+   git clone https://github.com/THeZoNE-007/network-anomaly-scanner.git
+   cd network-anomaly-scanner
    ```
 
 ---
@@ -58,22 +58,20 @@ The tool leverages the `scapy` library for packet parsing and analysis.
 1. Place your PCAP file in the same directory as the script or provide its path.
 2. Run the script using the following command:
    ```bash
-   python script_name.py <path_to_pcap_file>
+   python main.py <path_to_pcap_file>
    ```
    Example:
    ```bash
-   python script_name.py example_traffic.pcap
+   python main.py example_traffic.pcap
    ```
 
-3. The script will generate a CSV file named `outputReport.csv` in the same directory.
-
----
+3. The script will generate a CSV file named `Report.csv` in the same directory.
 
 ---
 
 ## Example Output
 
-The generated `outputReport.csv` will look like this:
+The generated `Report.csv` will look like this:
 
 | IP_Address     | MAC_Address       | Non-Std_Ports | Potential_DDoS | L_Pkt_Size | Unsolicitated_ARP_Replies | Unusually_L_DNS | Excessive_ICMP_Echo_Req | Excessive_TCP_SYN | Excessive_Port_Scanning | MDP(%) |
 |----------------|-------------------|---------------|----------------|------------|---------------------------|-----------------|-------------------------|------------------|-------------------------|--------|
