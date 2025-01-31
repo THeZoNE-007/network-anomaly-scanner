@@ -1,9 +1,12 @@
-```markdown
+Certainly! Below is the `README.md` file tailored to the provided Python script. It includes an overview, features, usage instructions, and other relevant sections.
+
+---
+
 # Network Traffic Analysis Tool
 
 ## Overview
 
-This Python script analyzes network traffic from a PCAP file to detect suspicious activities using multiple detection rules. It generates a report in CSV format, summarizing the findings and assigning a Malicious Detection Percentage (MDP) score to each IP address.
+This Python script analyzes network traffic from a PCAP file to detect suspicious activities using multiple detection rules. It generates a report in CSV format, summarizing the findings and assigning a **Malicious Detection Percentage (MDP)** score to each IP address.
 
 The tool leverages the `scapy` library for packet parsing and analysis.
 
@@ -152,6 +155,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Inspired by network security best practices and common threat detection techniques.
 
 ---
-```
 
-You can copy and paste this directly into a `README.md` file in your GitHub repository. Make sure to adjust placeholders like `script_name.py` and `yourusername` to match your actual project details.
+Feel free to customize this `README.md` further to suit your specific needs or add additional sections such as "Known Issues" or "Future Work." Let me know if you need any further assistance!
