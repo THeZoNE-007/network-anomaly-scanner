@@ -58,11 +58,11 @@ The tool leverages the `scapy` library for packet parsing and analysis.
 1. Place your PCAP file in the same directory as the script or provide its path.
 2. Run the script using the following command:
    ```bash
-   python main.py <path_to_pcap_file>
+   python Net_Anomaly.py <path_to_pcap_file>
    ```
    Example:
    ```bash
-   python main.py example_traffic.pcap
+   python Net_Anomaly.py example_traffic.pcap
    ```
 
 3. The script will generate a CSV file named `Report.csv` in the same directory.
