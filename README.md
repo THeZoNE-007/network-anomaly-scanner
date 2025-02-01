@@ -1,4 +1,4 @@
-# Network Traffic Analysis Tool
+# Network Traffic Anomaly Scanner
 
 ## Overview
 
